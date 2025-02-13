@@ -14,6 +14,8 @@ update-main:
 
 pr-beta-main:
 	git switch beta
+	git commit --allow-empty -m "Test empty commit"
+	git push
 	gh pr create --base main --head beta --title "Merge beta into main" --body "Automated pull request from Makefile"
 	git switch main
 
