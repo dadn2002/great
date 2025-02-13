@@ -13,7 +13,6 @@ update-main:
 	git push
 
 pr-beta-main:
-	pr-beta-main:
 	git switch beta
 	git commit --allow-empty -m "Test empty commit"
 	git push
